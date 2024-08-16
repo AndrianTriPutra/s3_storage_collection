@@ -16,4 +16,4 @@ this example for storage collection like minio or aws-s3
 > - get url download -> go run . url 1-image.png
 
 ## more information
-> - [medium] (https://andriantriputra.medium.com/golang-general-chapter-15-storage-collection-86f51995976b)
+> - [medium](https://andriantriputra.medium.com/golang-general-chapter-15-storage-collection-86f51995976b)
