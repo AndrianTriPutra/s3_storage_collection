@@ -1,7 +1,7 @@
 package main
 
 import (
-	"atp/storage/storage"
+	"atp/storage/collection"
 	"context"
 	"crypto/sha256"
 	"encoding/base64"
@@ -38,7 +38,7 @@ func main() {
 		log.Printf("file   :%s", file)
 	}
 
-	conf := storage.Cloud{
+	conf := collection.Cloud{
 		Endpoint:        "", //api url from minio
 		AccessKeyID:     "",
 		SecretAccessKey: "",
@@ -48,7 +48,7 @@ func main() {
 		Expire:          15 * time.Minute,  //expire url download
 	}
 
-	repo, err := storage.NewCloud(conf)
+	repo, err := collection.NewCloud(conf)
 	if err != nil {
 		log.Fatalf("[main] NewCloud:%s", err.Error())
 	}

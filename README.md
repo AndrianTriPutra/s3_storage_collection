@@ -10,7 +10,7 @@ this example for storage collection like minio or aws-s3
 - change configuration cloud at 'conf'
 
 ## how to run
-- upload file -> go run . 1-image.png
+- upload file -> go run .upload  1-image.png
 - list directory -> go run . list 
 - download -> go run . download 1-image.png
 - get url download -> go run . url 1-image.png
